@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollView_3_Images" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="11r-3f-nmw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fau-9m-MUg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m5K-ve-0z8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="jjA-Bq-lLm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="THq-K5-NgH">
+                                <rect key="frame" x="245" y="35" width="114" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="2bf-M0-Sju"/>
+                                    <constraint firstAttribute="height" constant="90" id="FQM-kd-E4d"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="TOR-YD-EnV">
+                                <rect key="frame" x="0.0" y="468" width="375" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="TFu-do-0k0"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xf7-dK-BNf">
+                                <rect key="frame" x="78" y="0.0" width="220" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="HWl-Kw-R1a"/>
+                                </constraints>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zLA-Np-Uyi">
+                                <rect key="frame" x="168" y="579" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="PGV-c6-Hma"/>
+                                    <constraint firstAttribute="height" constant="37" id="nfS-Nb-SJR"/>
+                                </constraints>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="THq-K5-NgH" firstAttribute="trailing" secondItem="m5K-ve-0z8" secondAttribute="trailingMargin" id="BmF-0X-Hqa"/>
+                            <constraint firstItem="Xf7-dK-BNf" firstAttribute="bottom" secondItem="TOR-YD-EnV" secondAttribute="bottom" id="CzB-NW-oaV"/>
+                            <constraint firstItem="jjA-Bq-lLm" firstAttribute="leading" secondItem="m5K-ve-0z8" secondAttribute="leading" id="MKP-Y0-jJq"/>
+                            <constraint firstItem="Xf7-dK-BNf" firstAttribute="top" secondItem="m5K-ve-0z8" secondAttribute="top" id="Pzq-1R-egg"/>
+                            <constraint firstItem="Fau-9m-MUg" firstAttribute="top" secondItem="zLA-Np-Uyi" secondAttribute="bottom" constant="51" id="URz-mK-PxI"/>
+                            <constraint firstItem="Xf7-dK-BNf" firstAttribute="bottom" secondItem="Fau-9m-MUg" secondAttribute="top" id="WB3-Tz-gX1"/>
+                            <constraint firstItem="zLA-Np-Uyi" firstAttribute="centerX" secondItem="m5K-ve-0z8" secondAttribute="centerX" id="Z1G-ad-6Xn"/>
+                            <constraint firstItem="jjA-Bq-lLm" firstAttribute="top" secondItem="m5K-ve-0z8" secondAttribute="top" id="aWs-VB-gBC"/>
+                            <constraint firstItem="THq-K5-NgH" firstAttribute="top" secondItem="11r-3f-nmw" secondAttribute="bottom" constant="15" id="dxG-Vb-LBG"/>
+                            <constraint firstItem="Xf7-dK-BNf" firstAttribute="centerX" secondItem="m5K-ve-0z8" secondAttribute="centerX" id="ftT-bC-X0R"/>
+                            <constraint firstItem="TOR-YD-EnV" firstAttribute="leading" secondItem="m5K-ve-0z8" secondAttribute="leading" id="gm0-fK-RmX"/>
+                            <constraint firstAttribute="trailing" secondItem="TOR-YD-EnV" secondAttribute="trailing" id="pY3-b8-uxn"/>
+                            <constraint firstAttribute="trailing" secondItem="jjA-Bq-lLm" secondAttribute="trailing" id="w5K-vo-WiD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="zLA-Np-Uyi" id="HY8-cE-zOZ"/>
+                        <outlet property="scrollView" destination="Xf7-dK-BNf" id="eug-HQ-ehQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mountains" width="375" height="100"/>
+        <image name="Sky" width="375" height="667"/>
+        <image name="Sun" width="53" height="53"/>
+    </resources>
+</document>
